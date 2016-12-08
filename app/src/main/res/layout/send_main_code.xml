@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ic_main_title"
+        layout="@layout/activity_main_title" />
+
+
+        <EditText
+            android:layout_marginTop="@dimen/dp_20"
+            android:id="@+id/ed_phone_text"
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:hint="    输入您的手机号"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_send_passore"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:hint="    输入验证码"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40" />
+
+
+        <Button
+            android:id="@+id/bt_sendmsg_phone"
+            android:background="@mipmap/send_bt_login"
+            android:textColor="@color/white"
+            android:text="获取验证码"
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_37" />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_commit_jump"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:background="@color/all_background_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

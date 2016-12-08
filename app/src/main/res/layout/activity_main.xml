@@ -3,14 +3,156 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.bwie.weijifentwo.MainActivity">
+    android:orientation="vertical"
+    tools:context=".WJF">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <include
+        android:id="@+id/ic_main_title"
+        layout="@layout/activity_main_title" />
+
+
+    <FrameLayout
+        android:id="@+id/fragmnet_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_main_buttom"
+        android:layout_below="@id/ic_main_title"></FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_main_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_51"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="#929292" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/bt_main_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/main_home_selector"
+                    android:text="@string/main_home"
+                    android:textColor="@drawable/main_butom_text_color"
+                    android:textSize="@dimen/dp_12"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/bt_main_advert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/main_advert_selector"
+                    android:text="@string/main_advert"
+                    android:textColor="@drawable/main_butom_text_color"
+                    android:textSize="@dimen/dp_12"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/bt_main_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/main_apply_selector"
+                    android:text="@string/main_apply"
+                    android:textColor="@drawable/main_butom_text_color"
+                    android:textSize="@dimen/dp_12"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <Button
+
+                    android:id="@+id/bt_main_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/main_goods_selector"
+                    android:text="@string/main_goods"
+                    android:textColor="@drawable/main_butom_text_color"
+                    android:textSize="@dimen/dp_12"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/bt_main_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/main_my_selector"
+                    android:text="@string/main_my"
+                    android:textColor="@drawable/main_butom_text_color"
+                    android:textSize="@dimen/dp_12"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 </RelativeLayout>

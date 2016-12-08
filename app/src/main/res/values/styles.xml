@@ -8,4 +8,36 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- viewpagerindicator主题样式 -->
+
+    <style name="MyAppTheme" parent="AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/MyAppWidget.TabPageIndicator</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyAppWidget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>'
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:layout_margin">@dimen/dp_5</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_3</item>
+        <item name="android:paddingBottom">@dimen/dp_3</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--  文字样式 -->
+    <style name="MyTextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+
 </resources>

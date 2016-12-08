@@ -1,4 +1,4 @@
-package com.bwie.weijifentwo;
+package com.bawei.xlistview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
